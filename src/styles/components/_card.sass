@@ -1,0 +1,29 @@
+.card
+	position: relative
+	overflow: hidden
+	font-size: .8rem
+	height: 10vw
+
+	img
+		object-fit: contain
+		width: 100%
+		height: 100%
+
+	&__container
+		opacity: 0
+		transition: opacity 250ms ease-in, transform 250ms ease-in
+		position: absolute
+		inset: 0
+		width: 100%
+		height: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+		color: #fff
+		background-color: #0000007a
+		text-align: center
+		-webkit-backdrop-filter: blur(4px)
+		backdrop-filter: blur(4px)
+	&__container:hover
+		opacity: 1
+		transform: scale(1.2)

@@ -1,0 +1,23 @@
+.countries
+	&__sort
+		display: flex
+		align-items: center
+		gap: 1rem
+		background-color: #21252D
+		color: $c1
+		padding: 0 1rem
+		margin: 1rem 0
+		// border-radius: 5px
+
+		ul, li
+			padding: .5rem
+			display: flex
+			align-items: center
+			gap: 1rem
+		ul li
+			gap: .5rem
+	&__list
+		display: grid
+		grid-template-columns: repeat(5, 1fr)
+		grid-gap: 1rem
+		flex-wrap: wrap
